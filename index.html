@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CREATURES LIFE | Premium Luxury Pune</title>
+    <meta name="description" content="CREATURES LIFE - A new dimension of luxury living in Pune. Experience cinematic architecture and celestial design.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@200&family=Inter:wght@300&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-content">
+            <h1 class="loader-logo">CREATURES LIFE</h1>
+            <div class="loader-line"></div>
+        </div>
+    </div>
+
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-progress"></div>
+
+    <!-- Custom Cursor -->
+    <div id="cursor-dot"></div>
+    <div id="cursor-outline"></div>
+
+    <!-- Navbar -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">CL</a>
+            <div class="nav-links">
+                <a href="#vision">VISION</a>
+                <a href="#residences">RESIDENCES</a>
+                <a href="#amenities">AMENITIES</a>
+                <a href="#gallery">GALLERY</a>
+                <a href="#contact">CONTACT</a>
+            </div>
+            <!-- Mobile Menu Toggle -->
+            <button id="mobile-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu" class="mobile-overlay">
+        <div class="mobile-links">
+            <a href="#vision">VISION</a>
+            <a href="#residences">RESIDENCES</a>
+            <a href="#amenities">AMENITIES</a>
+            <a href="#gallery">GALLERY</a>
+            <a href="#contact">CONTACT</a>
+        </div>
+    </div>
+
+    <!-- Floating Mobile Enquire -->
+    <a href="#contact" class="floating-enquire">ENQUIRE</a>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-video-container">
+                <video autoplay muted loop playsinline class="hero-video">
+                    <source src="https://player.vimeo.com/external/494250422.hd.mp4?s=12e06f8c7041539659b95952d7ee800ba8b1e427&profile_id=175" type="video/mp4">
+                    <!-- Fallback -->
+                    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1920&q=80" alt="Dark Architecture" loading="lazy">
+                </video>
+                <div class="hero-overlay-gradient"></div>
+            </div>
+            
+            <div class="hero-content">
+                <span class="hero-overline">INTRODUCING</span>
+                <h1 class="hero-title" id="hero-title">CREATURES LIFE</h1>
+                <p class="hero-tagline">Rise Above Everything</p>
+                <div class="hero-btns">
+                    <a href="#residences" class="btn">EXPLORE RESIDENCES</a>
+                    <a href="#contact" class="btn">ENQUIRE NOW</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">62 RESIDENCES</div>
+                    <div class="divider"></div>
+                    <div class="stat">47 FLOORS</div>
+                    <div class="divider"></div>
+                    <div class="stat">COMPLETION 2027</div>
+                </div>
+            </div>
+
+            <div class="scroll-indicator-container">
+                <div class="scroll-line"></div>
+                <span class="scroll-text">SCROLL</span>
+            </div>
+        </section>
+
+        <!-- About / Vision Section -->
+        <section id="vision" class="vision-section reveal">
+            <div class="vision-container">
+                <div class="vision-image-side">
+                    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80" alt="Visionary Architecture" class="zoom-img" loading="lazy">
+                    <div class="image-hover-overlay">
+                        <span class="plus-icon">+</span>
+                    </div>
+                </div>
+                <div class="vision-text-side">
+                    <div class="vertical-accent"></div>
+                    <div class="vision-content">
+                        <div class="overline-wrapper">
+                            <span class="silver-overline">THE VISION</span>
+                            <div class="animated-line"></div>
+                        </div>
+                        <h2 class="vision-heading">Architecture That <br>Defied Expectations</h2>
+                        <p class="vision-description">
+                            CREATURES LIFE is established on the principle of weightless luxury. A revolutionary residential tower in the heart of Pune, engineered to redefine skyline living. Through calculated cantilevers and celestial-inspired design, we have created a masterpiece that offers a cinematic experience of light, space, and silver-hued elegance.
+                        </p>
+                        
+                        <div class="vision-stats">
+                            <div class="vision-stat-item">
+                                <span class="stat-number" data-target="47">0</span>
+                                <span class="stat-label">Floors Above The City</span>
+                            </div>
+                            <div class="vision-stat-item">
+                                <span class="stat-number" data-target="62">0</span>
+                                <span class="stat-label">Exclusive Residences</span>
+                            </div>
+                            <div class="vision-stat-item">
+                                <span class="stat-number" data-target="12">0</span>
+                                <span class="stat-label">World-Class Amenities</span>
+                            </div>
+                        </div>
+
+                        <a href="#residences" class="vision-link">DISCOVER THE VISION <span class="arrow">→</span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Residences Section -->
+        <section id="residences" class="residences-section reveal">
+            <div class="container">
+                <div class="section-header centered">
+                    <span class="silver-overline">THE RESIDENCES</span>
+                    <h2 class="section-title">Three collections. <br>One unprecedented standard.</h2>
+                </div>
+                
+                <div class="residences-grid">
+                    <!-- Collection 01 -->
+                    <div class="res-card" data-collection="1">
+                        <div class="card-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Sky Studio" class="card-img" loading="lazy">
+                        </div>
+                        <div class="card-info">
+                            <span class="unit-label">COLLECTION ONE</span>
+                            <h3 class="unit-name">THE SKY STUDIO</h3>
+                            <span class="unit-size">650 SQ FT</span>
+                            <ul class="unit-features">
+                                <li>— 1 Signature Bath</li>
+                                <li>— Cinematic City Views</li>
+                                <li>— Integrated Smart Home</li>
+                            </ul>
+                            <button class="view-details-btn">VIEW DETAILS</button>
+                            <span class="unit-price">FROM $850,000</span>
+                        </div>
+                    </div>
+
+                    <!-- Collection 02 -->
+                    <div class="res-card" data-collection="2">
+                        <div class="card-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1600607687940-47a61d6ec67a?auto=format&fit=crop&w=800&q=80" alt="Cloud Residence" class="card-img" loading="lazy">
+                        </div>
+                        <div class="card-info">
+                            <span class="unit-label">COLLECTION TWO</span>
+                            <h3 class="unit-name">THE CLOUD RESIDENCE</h3>
+                            <span class="unit-size">1,200 SQ FT</span>
+                            <ul class="unit-features">
+                                <li>— 2 Bed / 2 Bath</li>
+                                <li>— Wraparound Terrace</li>
+                                <li>— Floor-to-Ceiling Glass</li>
+                            </ul>
+                            <button class="view-details-btn">VIEW DETAILS</button>
+                            <span class="unit-price">FROM $1,500,000</span>
+                        </div>
+                    </div>
+
+                    <!-- Collection 03 -->
+                    <div class="res-card highlight gold-border" data-collection="3">
+                        <div class="card-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1600566753190-17f0bb2a6c3e?auto=format&fit=crop&w=800&q=80" alt="Apex Penthouse" class="card-img" loading="lazy">
+                        </div>
+                        <div class="card-info">
+                            <span class="unit-label">COLLECTION THREE</span>
+                            <h3 class="unit-name">THE APEX PENTHOUSE</h3>
+                            <span class="unit-size">3,400 SQ FT</span>
+                            <ul class="unit-features">
+                                <li>— 4 Bed / 4 Bath</li>
+                                <li>— Private Infinity Pool</li>
+                                <li>— 360° Panoramic Views</li>
+                            </ul>
+                            <button class="view-details-btn">VIEW DETAILS</button>
+                            <span class="unit-price gold-text">PRICE UPON REQUEST</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modal Overlay -->
+        <div id="residence-modal" class="modal">
+            <div class="modal-backdrop"></div>
+            <div class="modal-content">
+                <button class="modal-close">&times;</button>
+                <div class="modal-grid">
+                    <div class="modal-image-side">
+                        <img id="modal-img" src="" alt="Residence Detail" loading="lazy">
+                    </div>
+                    <div class="modal-text-side">
+                        <span id="modal-label" class="silver-overline"></span>
+                        <h2 id="modal-name" class="modal-title"></h2>
+                        <div class="modal-specs">
+                            <div class="spec-item"><strong>SIZE</strong> <span id="modal-size"></span></div>
+                            <div class="spec-item"><strong>VIEW</strong> <span id="modal-view">City Skyline</span></div>
+                            <div class="spec-item"><strong>LEVELS</strong> <span>Levels 30-47</span></div>
+                        </div>
+                        <p id="modal-description" class="modal-desc"></p>
+                        <button class="btn gold-btn">REQUEST FLOORPLAN</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Amenities Section -->
+        <section id="amenities" class="amenities-section reveal">
+            <div class="amenities-bg">
+                <img src="https://images.unsplash.com/photo-1541123437800-1bb1317badc2?auto=format&fit=crop&w=1920&q=80" alt="Amenities Background" loading="lazy">
+                <div class="amenities-overlay"></div>
+            </div>
+            
+            <div class="container amenities-container">
+                <div class="section-header centered">
+                    <span class="silver-overline">AMENITIES</span>
+                    <h2 class="section-title">CURATED FOR THE EXCEPTIONAL</h2>
+                </div>
+
+                <div class="amenities-slider-wrapper">
+                    <button class="nav-arrow prev-arrow">←</button>
+                    <div class="amenities-scroll-row">
+                        <div class="amenity-card">
+                            <div class="amenity-icon">•</div>
+                            <h3>Infinity Edge Pool</h3>
+                            <p>Dive into the horizon from our cantilevered aquatic sanctuary.</p>
+                        </div>
+                        <div class="amenity-card">
+                            <div class="amenity-icon">•</div>
+                            <h3>Sky Observation Deck</h3>
+                            <p>Breathtaking panoramic views from Pune's highest residential point.</p>
+                        </div>
+                        <div class="amenity-card">
+                            <div class="amenity-icon">•</div>
+                            <h3>Private Residents' Club</h3>
+                            <p>Refined executive lounge for social and business gatherings.</p>
+                        </div>
+                        <div class="amenity-card">
+                            <div class="amenity-icon">•</div>
+                            <h3>Concierge & Lifestyle</h3>
+                            <p>24/7 dedicated service to meet your every celestial desire.</p>
+                        </div>
+                        <div class="amenity-card">
+                            <div class="amenity-icon">•</div>
+                            <h3>Spa & Wellness</h3>
+                            <p>A tranquil sanctuary for holistic rejuvenation and peace.</p>
+                        </div>
+                        <div class="amenity-card">
+                            <div class="amenity-icon">•</div>
+                            <h3>Fitness Studio</h3>
+                            <p>State-of-the-art weights and zero-G cardio equipment.</p>
+                        </div>
+                        <div class="amenity-card">
+                            <div class="amenity-icon">•</div>
+                            <h3>Private Cinema Room</h3>
+                            <p>Immersive 4K screening experience for the cinephile elite.</p>
+                        </div>
+                        <div class="amenity-card">
+                            <div class="amenity-icon">•</div>
+                            <h3>Smart Home Automation</h3>
+                            <p>Intelligent climate, lighting, and security at your fingertips.</p>
+                        </div>
+                        <div class="amenity-card">
+                            <div class="amenity-icon">•</div>
+                            <h3>Secure Parking</h3>
+                            <p>Discrete and secure basement facility with EV charging.</p>
+                        </div>
+                        <div class="amenity-card">
+                            <div class="amenity-icon">•</div>
+                            <h3>Rooftop Garden</h3>
+                            <p>A lush ecosystem suspended high above the urban sprawl.</p>
+                        </div>
+                    </div>
+                    <button class="nav-arrow next-arrow">→</button>
+                </div>
+
+                <div class="amenities-progress-container">
+                    <div class="amenities-progress-bar"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="gallery-section reveal">
+            <div class="container container-gallery">
+                <div class="gallery-header-flex">
+                    <div class="section-header centered">
+                        <span class="silver-overline">THE GALLERY</span>
+                        <div class="animated-line centered-line"></div>
+                    </div>
+                    
+                    <div class="gallery-mode-toggles">
+                        <button class="mode-btn active" data-mode="grid" title="Grid View">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+                        </button>
+                        <button class="mode-btn" data-mode="slideshow" title="Fullscreen Slideshow">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
+                        </button>
+                        <button class="mode-btn" data-mode="filmstrip" title="Filmstrip View">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 10h16M4 14h16M4 18h16M4 6h16M4 22h16M4 2h16M2 2v20M22 2v20"></path></svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="gallery-main-display">
+                    <!-- MODE 1: GRID -->
+                    <div id="grid-view" class="view-container active">
+                        <div class="masonry-grid">
+                            <div class="gallery-item" data-index="0">
+                                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80" alt="Interior 1" loading="lazy">
+                                <div class="item-overlay"><span class="expand-text">EXPAND</span></div>
+                            </div>
+                            <div class="gallery-item" data-index="1">
+                                <img src="https://images.unsplash.com/photo-1600607687940-47a61d6ec67a?auto=format&fit=crop&w=1200&q=80" alt="Interior 2" loading="lazy">
+                                <div class="item-overlay"><span class="expand-text">EXPAND</span></div>
+                            </div>
+                            <div class="gallery-item" data-index="2">
+                                <img src="https://images.unsplash.com/photo-1600566753190-17f0bb2a6c3e?auto=format&fit=crop&w=1200&q=80" alt="Interior 3" loading="lazy">
+                                <div class="item-overlay"><span class="expand-text">EXPAND</span></div>
+                            </div>
+                            <div class="gallery-item" data-index="3">
+                                <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80" alt="Interior 4" loading="lazy">
+                                <div class="item-overlay"><span class="expand-text">EXPAND</span></div>
+                            </div>
+                            <div class="gallery-item" data-index="4">
+                                <img src="https://images.unsplash.com/photo-1541123437800-1bb1317badc2?auto=format&fit=crop&w=1200&q=80" alt="Interior 5" loading="lazy">
+                                <div class="item-overlay"><span class="expand-text">EXPAND</span></div>
+                            </div>
+                            <div class="gallery-item" data-index="5">
+                                <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=80" alt="Interior 6" loading="lazy">
+                                <div class="item-overlay"><span class="expand-text">EXPAND</span></div>
+                            </div>
+                            <div class="gallery-item" data-index="6">
+                                <img src="https://images.unsplash.com/photo-1600121848594-d8644e57abab?auto=format&fit=crop&w=1200&q=80" alt="Interior 7" loading="lazy">
+                                <div class="item-overlay"><span class="expand-text">EXPAND</span></div>
+                            </div>
+                            <div class="gallery-item" data-index="7">
+                                <img src="https://images.unsplash.com/photo-1600572236304-f8a736f0592b?auto=format&fit=crop&w=1200&q=80" alt="Interior 8" loading="lazy">
+                                <div class="item-overlay"><span class="expand-text">EXPAND</span></div>
+                            </div>
+                            <div class="gallery-item" data-index="8">
+                                <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1200&q=80" alt="Interior 9" loading="lazy">
+                                <div class="item-overlay"><span class="expand-text">EXPAND</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- MODE 2: SLIDESHOW -->
+                    <div id="slideshow-view" class="view-container">
+                        <div class="slideshow-container">
+                            <button class="slide-nav prev-slide">←</button>
+                            <div class="main-slide">
+                                <img id="featured-slide-img" src="" alt="Slideshow" loading="lazy">
+                                <div class="slide-caption">
+                                    <h4 id="slide-title"></h4>
+                                    <p id="slide-desc"></p>
+                                </div>
+                            </div>
+                            <button class="slide-nav next-slide">→</button>
+                        </div>
+                    </div>
+
+                    <!-- MODE 3: FILMSTRIP -->
+                    <div id="filmstrip-view" class="view-container">
+                        <div class="filmstrip-container">
+                            <div class="filmstrip-featured">
+                                <img id="filmstrip-main-img" src="" alt="Filmstrip Featured" loading="lazy">
+                            </div>
+                            <div class="filmstrip-thumbnails">
+                                <!-- Thumbnails injected by JS -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lightbox -->
+        <div id="lightbox" class="lightbox">
+            <div class="lightbox-backdrop"></div>
+            <div class="lightbox-header">
+                <span id="lightbox-counter" class="silver-overline">01 / 09</span>
+                <button class="lightbox-close">&times;</button>
+            </div>
+            <div class="lightbox-content">
+                <button class="lightbox-nav prev-lb">←</button>
+                <img id="lightbox-img" src="" alt="Fullscreen View" loading="lazy">
+                <button class="lightbox-nav next-lb">→</button>
+            </div>
+        </div>
+
+        <!-- Floor Plans Section -->
+        <section id="floorplans" class="floorplans-section reveal">
+            <div class="container">
+                <div class="section-header centered">
+                    <span class="silver-overline">FLOOR PLANS</span>
+                    <h2 class="section-title">Every square foot considered. <br>Every detail intentional.</h2>
+                </div>
+
+                <div class="floorplans-tabs-wrapper">
+                    <div class="tabs-nav">
+                        <button class="floor-tab-btn active" data-plan="sky">SKY STUDIO</button>
+                        <button class="floor-tab-btn" data-plan="cloud">CLOUD RESIDENCE</button>
+                        <button class="floor-tab-btn" data-plan="apex">APEX PENTHOUSE</button>
+                        <div class="tab-sliding-underline"></div>
+                    </div>
+                </div>
+
+                <div class="floorplans-display">
+                    <div class="floorplan-image-side">
+                        <div class="floorplan-img-container">
+                            <img id="floorplan-main-img" src="https://images.unsplash.com/photo-1574362848149-11496d93a7c7?auto=format&fit=crop&w=1200&q=80" alt="Floor Plan" class="zoom-cursor" loading="lazy">
+                        </div>
+                    </div>
+                    
+                    <div class="floorplan-specs-side">
+                        <h2 id="plan-name" class="plan-heading">THE SKY STUDIO</h2>
+                        <div class="silver-hr"></div>
+                        <div class="specs-list">
+                            <div class="spec-row" style="--i:1"><span>Total Area</span><strong id="spec-area">650 SQ FT</strong></div>
+                            <div class="spec-row" style="--i:2"><span>Bedrooms</span><strong id="spec-beds">Studio</strong></div>
+                            <div class="spec-row" style="--i:3"><span>Bathrooms</span><strong id="spec-baths">1 Signature</strong></div>
+                            <div class="spec-row" style="--i:4"><span>Parking</span><strong id="spec-parking">1 Secure Spot</strong></div>
+                            <div class="spec-row" style="--i:5"><span>Terrace/Balcony</span><strong id="spec-terrace">50 SQ FT</strong></div>
+                            <div class="spec-row" style="--i:6"><span>Floor Range</span><strong id="spec-range">Levels 15-28</strong></div>
+                            <div class="spec-row" style="--i:7"><span>Starting Price</span><strong id="spec-price">$850,000</strong></div>
+                        </div>
+                        <div class="plan-actions">
+                            <button class="btn">DOWNLOAD FLOORPLAN</button>
+                            <button class="btn gold-btn">BOOK A VIEWING</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Location Section -->
+        <section id="location" class="location-section reveal">
+            <div class="container container-location">
+                <div class="location-grid">
+                    <div class="location-text-side">
+                        <span class="silver-overline">PRIME LOCATION</span>
+                        <h2 class="location-heading">At The Heart Of Everything</h2>
+                        <p class="location-desc">CREATURES LIFE is strategically positioned in Pune's most visionary district. A nexus of high-end commerce, elite education, and seamless connectivity.</p>
+                        
+                        <div class="landmarks-list">
+                            <div class="landmark-item" style="--i:1">
+                                <span class="dist">05 MIN</span>
+                                <span class="place">Pune International Airport</span>
+                            </div>
+                            <div class="landmark-item" style="--i:2">
+                                <span class="dist">08 MIN</span>
+                                <span class="place">The Business Gateway</span>
+                            </div>
+                            <div class="landmark-item" style="--i:3">
+                                <span class="dist">12 MIN</span>
+                                <span class="place">Royal Pune Golf Club</span>
+                            </div>
+                            <div class="landmark-item" style="--i:4">
+                                <span class="dist">15 MIN</span>
+                                <span class="place">Zenith Medical Center</span>
+                            </div>
+                            <div class="landmark-item" style="--i:5">
+                                <span class="dist">20 MIN</span>
+                                <span class="place">City Center Hub</span>
+                            </div>
+                        </div>
+
+                        <a href="https://maps.google.com" target="_blank" class="direction-link">GET DIRECTIONS <span class="arrow">→</span></a>
+                    </div>
+
+                    <div class="location-map-side">
+                        <div class="map-container">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d121059.0344739699!2d73.780565410667!3d18.524890422463994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf2e67414521%3A0x68271dccad3a7aca!2sPune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1710515152000!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section reveal">
+            <div class="container container-contact">
+                <div class="contact-header">
+                    <h2 class="contact-title">BEGIN YOUR JOURNEY</h2>
+                    <span class="contact-subtitle">Our sales team responds within 24 hours</span>
+                </div>
+
+                <div id="contact-form-container">
+                    <form id="contact-form" class="minimal-form">
+                        <div class="form-row">
+                            <div class="input-group">
+                                <input type="text" id="fname" required>
+                                <label for="fname">First Name</label>
+                                <div class="focus-border"></div>
+                            </div>
+                            <div class="input-group">
+                                <input type="text" id="lname" required>
+                                <label for="lname">Last Name</label>
+                                <div class="focus-border"></div>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="input-group">
+                                <input type="email" id="email" required>
+                                <label for="email">Email Address</label>
+                                <div class="focus-border"></div>
+                            </div>
+                            <div class="input-group">
+                                <input type="tel" id="phone" required>
+                                <label for="phone">Phone Number</label>
+                                <div class="focus-border"></div>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="input-group">
+                                <select id="interest" required>
+                                    <option value="" disabled selected></option>
+                                    <option value="sky">Sky Studio</option>
+                                    <option value="cloud">Cloud Residence</option>
+                                    <option value="apex">Apex Penthouse</option>
+                                </select>
+                                <label for="interest">Unit Interest</label>
+                                <div class="focus-border"></div>
+                            </div>
+                            <div class="input-group">
+                                <input type="date" id="date" required>
+                                <label for="date" class="fixed-label">Preferred Viewing Date</label>
+                                <div class="focus-border"></div>
+                            </div>
+                        </div>
+
+                        <div class="input-group full-width">
+                            <textarea id="message" rows="1" required></textarea>
+                            <label for="message">Your Message</label>
+                            <div class="focus-border"></div>
+                        </div>
+
+                        <button type="submit" class="submit-btn">SUBMIT ENQUIRY</button>
+                    </form>
+
+                    <div id="success-message" class="success-screen">
+                        <div class="checkmark-circle">
+                            <svg viewBox="0 0 52 52"><circle class="checkmark-circle-path" cx="26" cy="26" r="25" fill="none"/><path class="checkmark-check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/></svg>
+                        </div>
+                        <h3>Thank you.</h3>
+                        <p>We will be in touch shortly.</p>
+                    </div>
+                </div>
+
+                <div class="contact-footer">
+                    <a href="tel:+912000000000" class="contact-info-link">+91 20 0000 0000</a>
+                    <a href="mailto:concierge@creatureslife.in" class="contact-info-link">concierge@creatureslife.in</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-line"></div>
+        <div class="container footer-container">
+            <div class="footer-grid">
+                <div class="footer-col footer-brand">
+                    <h2 class="footer-logo">CL</h2>
+                    <p class="footer-tagline">Rise Above Everything</p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon">Instagram</a>
+                        <a href="#" class="social-icon">LinkedIn</a>
+                        <a href="#" class="social-icon">WhatsApp</a>
+                    </div>
+                </div>
+                
+                <div class="footer-col footer-links">
+                    <span class="footer-label">EXPLORE</span>
+                    <a href="#vision">Vision</a>
+                    <a href="#residences">Residences</a>
+                    <a href="#amenities">Amenities</a>
+                    <a href="#gallery">Gallery</a>
+                    <a href="#floorplans">Floor Plans</a>
+                    <a href="#contact">Contact</a>
+                </div>
+
+                <div class="footer-col footer-contact">
+                    <span class="footer-label">LOCATION</span>
+                    <p>Zenith District, Pune 411001</p>
+                    <p>+91 20 0000 0000</p>
+                    <p>concierge@creatureslife.in</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Creatures Life. All Rights Reserved.</p>
+                <div class="legal">
+                    <a href="#">PRIVACY POLICY</a>
+                    <span>·</span>
+                    <a href="#">TERMS</a>
+                    <span>·</span>
+                    <a href="#">DISCLAIMER</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
